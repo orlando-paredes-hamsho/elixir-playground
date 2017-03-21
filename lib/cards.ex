@@ -1,4 +1,11 @@
 defmodule Cards do
+  @moduledoc """
+    This module creates and manages a deck of cards
+  """
+  
+  @doc """ 
+    Returns a list of strings representing a deck of trading cards
+  """
   def create_deck do 
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
@@ -8,6 +15,10 @@ defmodule Cards do
     end
   end
   
+  @doc """ 
+    Shuffles a deck of cards
+    The `deck` argument represents a deck to be shuffled
+  """
   def shuffle(deck) do 
     Enum.shuffle(deck)
   end
